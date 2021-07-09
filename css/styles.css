@@ -1,0 +1,203 @@
+html {
+    scroll-behavior:smooth ;
+}
+/* Navigation bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+}
+.nav-item {
+    padding: 0 18px;
+}
+.nav-link {
+    font-size: 1.2rem;
+}
+
+/* Headings */
+
+h1, h2, h3, p {
+    font-family: "Montserrat";
+}
+
+/* Download Buttons */
+.btn {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Top Container */
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.title-text {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.container-fluid {
+    padding: 3% 15% 6%;
+}
+.download-button {
+    margin: 3% 3% 5% 0;
+}
+.title-image {
+    width: 19%;
+    transform: rotate(25deg);
+    position: absolute;
+    right : 25%;
+    /* Here, since the position is absolute, the image becomes out of the HTML flow. So the width,
+    margin, etc has to changed with respective to the page and not the container in which it was earlier.
+    Hence, width was reduced from 55% to 17%(wrt the whole page) and magin-left was changed from 17% to 5% */
+}
+
+/* Features */
+#features {
+    text-align: center;
+    padding: 7% 14%;
+    
+    background-color: white; 
+    position: relative;
+    /* bottom: 140px; */
+    /* z-index: 1; */
+    /* Since, the positioning of the image was changed to absolute, necessart changes were made. */
+}
+.features-section-icon {
+    color: #ef8172;
+    padding: 7%;
+}
+.features-section-icon:hover {
+    color: #ff4c68;
+}
+.feature-heading {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.feature-descrp {
+    color: #8f8f8f;
+}
+.feature-box {
+    padding: 4%;
+}
+
+/* Testimonials */
+
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+.testimonial-text {
+    font-weight: 800;
+    line-height: 1.5;
+    padding: 0 13%;
+}
+.testimonial-image {
+    width: 12%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.carousel-item {
+    padding: 7% 14%;
+}
+
+/* Press */
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 40px;
+}
+
+/* Pricing */
+#pricing {
+    text-align: center;
+    padding: 6% 14%;
+}
+.pricing-heading {
+    font-weight: 800;
+}
+.pricing-text {
+    margin-bottom: 5%;
+}
+.price-plans {
+    font-weight: 700;
+}
+.price-headings {
+    font-weight: 500;
+}
+
+/* Call to Action */
+#cta {
+    text-align: center;
+    padding: 7% 14%;
+    background-color: #ff4c68;
+    color: white;
+    
+}
+.cta-text {
+    padding: 0 20% 2%;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.7;
+}
+.cta-download {
+    margin: 0 10px;
+    font-family: 'Montserrat';
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 4% 14%;
+}
+.footer-icons {
+    margin: 0 10px;
+}
+.footer-text {
+    padding-top: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 1028px) {
+    /* Title */
+    #title {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .title-text {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1.5;
+        /* text-align: center; */
+    }
+    .title-image {
+        width: 50%;
+        transform: rotate(0deg);
+        position: static;
+        /* margin-left: 17%; */
+        padding-top: 20px;
+    }
+    /* Pricing */
+    #pricing {
+        text-align: center;
+        padding: 6% 14%;
+    }
+    .row {
+        --bs-gutter-y: 1.5rem;
+    }
+    .pricing-text {
+        margin-bottom: 5%;
+    }
+}
