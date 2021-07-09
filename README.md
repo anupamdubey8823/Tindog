@@ -1,1 +1,1 @@
-### TinDog - A dog dating wesite clone
+### TinDog - A dog dating website clone
